@@ -2647,6 +2647,7 @@ do
 
     local WatermarkOuter = Library:Create('Frame', {
         AnchorPoint = Vector2.new(1, 1);
+        BackgroundTransparency = 1;
         BorderColor3 = Color3.new(0, 0, 0);
         Position = UDim2.new(1, -13, 1, -13);
         Size = UDim2.new(0, 213, 0, 20);
@@ -2665,11 +2666,12 @@ do
     });
 
     Library:AddToRegistry(WatermarkInner, {
+        BackgroundColor3 = 'MainColor';
         BorderColor3 = 'AccentColor';
     });
 
     local InnerFrame = Library:Create('Frame', {
-        BackgroundColor3 = Color3.new(1, 1, 1);
+        BackgroundColor3 = Library.MainColor;
         BorderSizePixel = 0;
         Position = UDim2.new(0, 1, 0, 1);
         Size = UDim2.new(1, -2, 1, -2);
@@ -2993,13 +2995,13 @@ function Library:CreateWindow(...)
 
     local titleParts = {
         {text = "  Fiva", color = Color3.fromRGB(255, 255, 255)},
-        {text = "  |  ", color = Color3.fromRGB(255, 255, 255)},
+        {text = "   |   ", color = Color3.fromRGB(255, 255, 255)},
 		{text = ".gg/Neqa57vzHr", color = Color3.fromRGB(0, 0, 255)},
-		{text = "  |  ", color = Color3.fromRGB(255, 255, 255)},
+		{text = "   |   ", color = Color3.fromRGB(255, 255, 255)},
 		{text = "Freemium Version", color = Color3.fromRGB(255, 255, 255)},
-        {text = "  |  ", color = Color3.fromRGB(255, 255, 255)},
+        {text = "   |   ", color = Color3.fromRGB(255, 255, 255)},
 		{text = "South Bronx", color = Color3.fromRGB(0, 0, 255)},
-		{text = "  | ", color = Color3.fromRGB(255, 255, 255)},
+		{text = "   |  ", color = Color3.fromRGB(255, 255, 255)},
         {text = " " .. executorname, color = Color3.fromRGB(0, 0, 255)}
     }
 
