@@ -2899,7 +2899,7 @@ function Library:CreateWindow(...)
     if type(Config.MenuFadeTime) ~= 'number' then Config.MenuFadeTime = 0.2 end
 
     if typeof(Config.Position) ~= 'UDim2' then Config.Position = UDim2.fromOffset(175, 50) end
-    if typeof(Config.Size) ~= 'UDim2' then Config.Size = UDim2.fromOffset(550, 400) end
+    if typeof(Config.Size) ~= 'UDim2' then Config.Size = UDim2.fromOffset(400, 500) end
 
     if Config.Center then
         Config.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -2993,13 +2993,13 @@ function Library:CreateWindow(...)
 
     local titleParts = {
         {text = "  Fiva", color = Color3.fromRGB(255, 255, 255)},
-        {text = " | ", color = Color3.fromRGB(255, 255, 255)},
+        {text = "  |  ", color = Color3.fromRGB(255, 255, 255)},
 		{text = ".gg/Neqa57vzHr", color = Color3.fromRGB(0, 0, 255)},
-		{text = " | ", color = Color3.fromRGB(255, 255, 255)},
+		{text = "  |  ", color = Color3.fromRGB(255, 255, 255)},
 		{text = "Freemium Version", color = Color3.fromRGB(255, 255, 255)},
-        {text = " | ", color = Color3.fromRGB(255, 255, 255)},
+        {text = "  |  ", color = Color3.fromRGB(255, 255, 255)},
 		{text = "South Bronx", color = Color3.fromRGB(0, 0, 255)},
-		{text = " |", color = Color3.fromRGB(255, 255, 255)},
+		{text = "  | ", color = Color3.fromRGB(255, 255, 255)},
         {text = " " .. executorname, color = Color3.fromRGB(0, 0, 255)}
     }
 
