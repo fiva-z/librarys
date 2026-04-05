@@ -2995,13 +2995,13 @@ function Library:CreateWindow(...)
 
     local titleParts = {
         {text = "   Fiva", color = Color3.fromRGB(255, 255, 255)},
-        {text = "       |       ", color = Color3.fromRGB(255, 255, 255)},
+        {text = "     |     ", color = Color3.fromRGB(255, 255, 255)},
 		{text = ".gg/Neqa57vzHr", color = Color3.fromRGB(0, 0, 255)},
-		{text = "       |       ", color = Color3.fromRGB(255, 255, 255)},
+		{text = "     |     ", color = Color3.fromRGB(255, 255, 255)},
 		{text = "Freemium Version", color = Color3.fromRGB(255, 255, 255)},
-        {text = "       |       ", color = Color3.fromRGB(255, 255, 255)},
+        {text = "     |     ", color = Color3.fromRGB(255, 255, 255)},
 		{text = "South Bronx", color = Color3.fromRGB(0, 0, 255)},
-		{text = "       |      ", color = Color3.fromRGB(255, 255, 255)},
+		{text = "     |    ", color = Color3.fromRGB(255, 255, 255)},
         {text = " " .. executorname, color = Color3.fromRGB(0, 0, 255)}
     }
 
