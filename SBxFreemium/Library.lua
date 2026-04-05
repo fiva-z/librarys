@@ -2646,10 +2646,11 @@ do
     });
 
     local WatermarkOuter = Library:Create('Frame', {
+        AnchorPoint = Vector2.new(1, 1);
         BorderColor3 = Color3.new(0, 0, 0);
-        Position = UDim2.new(0, 100, 0, -25);
+        Position = UDim2.new(1, -13, 1, -13);
         Size = UDim2.new(0, 213, 0, 20);
-        ZIndex = 200;
+        ZIndex = 1000;
         Visible = false;
         Parent = ScreenGui;
     });
@@ -2712,7 +2713,7 @@ do
     local KeybindOuter = Library:Create('Frame', {
         AnchorPoint = Vector2.new(0, 0.5);
         BorderColor3 = Color3.new(0, 0, 0);
-        Position = UDim2.new(0, 10, 0.5, 0);
+        Position = UDim2.new(0, 10, 0.45, 0);
         Size = UDim2.new(0, 210, 0, 20);
         Visible = false;
         ZIndex = 100;
